@@ -1,0 +1,19 @@
+.ironman{
+ padding: 20px;
+ background-color: aliceblue;
+ border-radius: 20px;
+ box-shadow:2px 3px 10px rebeccapurple;
+ width: max-content;
+}
+.ironman img{
+    height: 400px;
+}
+input{
+    height: 50px;
+    font-size: 24px;
+    border-radius: 20px;
+}
+p{
+    color: white;
+    font-size: 24px;
+}

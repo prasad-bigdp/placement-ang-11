@@ -1,0 +1,56 @@
+============================================
+                                  ANGULAR
+=============================================
+   ---> Angular uses TS whereas Angular JS uses JS.
+   ---> Angular is developed by Google and current version is Angular 19 and official website is angular.dev
+   ---> Angular is a front end web framework which is used to build scalable SPA's.
+   ---> framework is nothing but complete developer environment whereas library is used for specific purposes
+  ---> react is just library of JS and angular is a framework. react supports one way data binding and angular supports two way data binding
+ 
+  How to install angular?
+   step 1: To install angular, system must have nodejs and typescript.
+    check them by going to "cmd" and type commands 
+      "node -v" and "tsc -v"
+   step 2: Type in cmd " npm install -g @angular/cli@latest "
+   step 3: verify whether angular is installed correctly or not by typing
+     in cmd  "ng v". it prints angular version
+
+Angular uses command line interfaces for creating,updating and even running application . this technique is called scaffolding
+
+How to create first application in angular?
+  step 1: open code editor and open a folder(file --> open folder )
+  step 2: open terminal ---> new terminal ---> command prompt
+  step 3: goto specific folder in cmd using cd folder-name and type command  "ng new app-name"
+  step 4: choose "css" and no to SSR/SSG.
+  step 5: to run the application , type command " ng serve "
+
+ Angular divides the UI as components. A component is reusable UI code. A component in angular contains 4 files
+   template(html)
+   component(ts)
+   style(css)
+   specification (.spec.ts - testing)
+
+folder structure:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

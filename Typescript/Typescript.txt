@@ -1,0 +1,223 @@
+Typescript:
+    1. why we need TS?
+    JS follows dynamic datatyping which causes production bugs. In 2012, microsoft developed a layer for JS called Typescript
+  Typescript is a superset of javascript
+  Typescript allows static data typing and it needs to be converted as JS for browsers
+  2. why TS for angular?
+      In 2010 , Google releases angular JS, In 2012 after TS got developed, Google released Angular which works with TS. it is also called as 
+angular 2/angular+
+
+3. How to install Typescript?
+     step 1: Goto Google and search " nodejs download"
+  step 2: click on "https://nodejs.org/en/download"
+  step 3: click on "windows installer"
+  step 4: install downloaded file, checck for npm package manager-->next--->next---> install
+verify whether it is installed correctly or not by going to "cmd" and type "node -v"
+  step 5: goto cmd and type " npm install -g typescript "
+verify whether typescipt is installed correctly or not by going to "cmd" and type "tsc -v"
+
+4.  How to use typescript?
+   create a .ts file and write "console.log("hello world")" using VScode
+  goto terminal --> new terminal ---> command prompt
+  type " npx tsc filename.ts --watch " and enter
+  it creates JS file with converted code from ts. tsc(typescript compiler) converts ts into js
+ or for learning purpose, you can visit typescript playground: https://www.typescriptlang.org/play
+
+5. How do you set rules of tsc?
+    you can define certain rules to tsc by tsconfig files. you can create a tsconfig file by command "tsc --init"
+
+6. Explain "Type annotation" and "Type Inference".
+   Type annotation refers to the explicit mention of data type to the variables followed by colon(:)
+  eg: let a:number= 25;
+ Type Inference refers to guess of tsc , datatype of variable based on its initial value
+  eg: let k= 25;
+  k is considered as 'number' type
+
+   ** for better programming, we prefer annotation rather than inference
+
+task1: declar str with value "typescript" using type inference and type annotation
+     let str:string = "typescript"
+     let str1 = "typescript"
+
+Data types in Typescript:
+   i. number : used to represent numerical values
+       eg: let x:number=25;
+   ii. string  : used to represent alphanumerical values
+       eg: let x:string = "raj"
+   iii. boolean : used to represent true or false
+       eg: let x:boolean =true
+    iv. undefined : used to represent 'undefined' values
+       eg: let x:undefined =undefined
+     v. null: used to represent 'null' values
+       eg: let x:null=null
+     vi. union: used to combine two or more data types
+       eg: let x:number|boolean =true
+     vii. any: used to toggle off typescript. variable 
+       with  'any' will have dynamic datatype
+        eg: let x:any =25/"raj"/true/undefined/null
+     viii. arrays: arrays can be declares as specific data types. array is a collection of similar datatype items
+         eg: let arr:number[] =[25,85,96]  //it accepts only numbers
+               let arr:(number|string)[] = [22,33,44] //it accepts
+               numbers or strings
+       ix. Tuple: tuple is used when we need to declare each 
+      and every individual item in the array
+         eg: let arr:[number,string,number]=[25,"raj",33]
+       x: type alias : type aliases are used to provide certain 
+           name to a datatype structure   
+           eg: type nbs = number|boolean|string
+              let x : nbs=25,
+              type std= {
+                       rno:number,
+                        name:string,
+                        marks:number
+                      }
+
+                  let obj:std = { 
+                      rno:5,name:"prasad",marks:33
+                   }
+              to define optional field values, you can use '?'
+           xi. function: functions are used to define a particular task
+                 function will have parameters with data types and
+                  also return type   
+                     syntax: 
+function function_name(parameter1 datatype):returnType
+{
+
+
+}
+                 
+classes:
+    Typescript supports complete object oriented programming to JS.
+  It contains classes, object definitions, access specifiers etc..,
+// create a class
+    class classname{
+        properties;
+        constructor(){
+          }
+        methods;
+}
+methods are the function which are declared inside class, they belongs the objects created by the class
+'this' operator represents current calling object. arrow function cannot give this value
+OOP priciples: abstraction,encapsulation,inheritance
+constructor is used to initialise the default values of class members
+Eg:  interface t{
+       name:string,
+       salary:number,
+       subject:string
+}
+class Teacher implements t{
+       name;salary;subject
+       constructor( n,s,su){
+        this.name=n;this.salary=s;this.subject=su;
+       }
+       teach(){
+            console.log(this.name+" is teaching well")
+       } 
+      }
+     let obj= new Teacher("john",20000,"physics");
+     obj.teach()
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

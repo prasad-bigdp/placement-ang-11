@@ -1,0 +1,9 @@
+.movie{
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 3px 10px orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,19 @@
+Components Communication: Component is the basic building block of UI. user Interface is divided into multiple reusable parts. Each part is called component.
+  A component will have html,ts,css and .spec.ts files.
+  we can insert one component into another component called Nested Components. Each component will have selector ( name that triggers component view ).
+ 
+  step 1: start an angular application
+   (terminal --> new terminal --> command prompt
+         ---> ng new appname --standalone="false"
+  step 2: create a new component in terminal
+            ng generate component component-name
+
+  step 3: delete all code in app.component.html
+  step 4: goto new component and take its selector and paste it in app.component.html multiple times
+  step 5: apply suitable styles and run the app
+              ng serve -o
+
+
+
+
+

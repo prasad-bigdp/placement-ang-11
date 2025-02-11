@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-image: url('https://hips.hearstapps.com/hmg-prod/images/marvel-1676501297.jpeg?crop=0.5xw:1xh;center,top&resize=640:*');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+}

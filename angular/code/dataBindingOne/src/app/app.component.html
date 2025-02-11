@@ -1,0 +1,10 @@
+<input type="text" placeholder="Enter your name" [(ngModel)]="name">
+<p>My name is {{name}}</p>
+<div class="ironman">
+  <img [src]="imageurl" [alt]="title"> <!-- property binding -->
+  <h1>{{title}}</h1> <!-- string interpolation -->
+  <p>likes: {{likes}}</p>
+  <button (click)="incrLike()">like</button> <!-- event binding -->
+  <button (click)="decrLike()">dislike</button>
+</div>
+

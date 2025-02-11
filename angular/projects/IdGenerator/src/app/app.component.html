@@ -1,0 +1,14 @@
+   <div class="inputs">
+      <input type="text" placeholder="Enter image Url" [(ngModel)]="imageUrl">
+      <input type="text" placeholder="Enter name" [(ngModel)]="name">
+      <input type="number" placeholder="Enter age" [(ngModel)]="age">
+   </div>
+   <div id="idCard">
+      <div class="left">
+        <p><strong>Name:</strong> {{name}}</p>
+        <p><strong>Age:</strong>{{age}}</p>
+      </div>
+      <div class="right">
+        <img [src]="imageUrl" [alt]="name">
+      </div>
+   </div>

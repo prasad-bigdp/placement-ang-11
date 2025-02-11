@@ -1,0 +1,7 @@
+div{
+    padding: 20px;
+    background-color: white;
+    color: black;
+    box-shadow: 2px 3px 25px rgb(202, 40, 12);
+    width: max-content;
+}

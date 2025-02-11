@@ -1,0 +1,60 @@
+Components:
+Angular divides whole UI into reusable blocks of code. each reusable code block is called component .
+  In component , we have 4 files 
+  template(html)- view
+  component(ts)  -- logic
+  style(css) -- design & style
+  specification(spec.ts) -- testing
+
+ In component file, a selector will be given for every component. template and style files are also linked in component file. Whole logic/dynamic functionality will be inside a class in component file
+
+
+Data binding:  In angular we can use data binding techniques to transfer data from component(ts) to template(html) or template(html) to component(ts) or both at a time. 
+  There are two types of data binding:  
+   i. one way data binding
+       we can transfer data from component to template or template to component in multiple ways
+      a. string interpolation: using string interpolation, we can assign data from component to template. we need to wrap variables using {{ and }}
+  ii. property Binding: 
+       we can transfer data from component to template but as a property value. we need to wrap property/attribute using [ and ]
+  iii. event binding: 
+     we can transfer data from template to component using event binding. we need to wrap events in ( and ) 
+
+<div class="ironman">
+  <img [src]="imageurl" [alt]="title"> <!-- property binding -->
+  <h1>{{title}}</h1> <!-- string interpolation -->
+  <p>likes: {{likes}}</p>
+  <button (click)="incrLike()">like</button> <!-- event binding -->
+  <button (click)="decrLike()">dislike</button>
+</div>
+
+ ii. Two way Data Binding:
+     we can use two way data binding in angular which allows template and component files transfers the data at a time.
+ but for this we need ngModel directives. we can import it from formsModule
+  write it in app.module.ts
+     import {FormsModule} from '@angular/forms'
+ Also write FormsModule in imports
+  write x='' in app.component.ts
+  write <input type="text" [(ngModel)]="x">
+            <p>{{x}}</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

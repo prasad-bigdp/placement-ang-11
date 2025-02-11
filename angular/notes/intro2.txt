@@ -1,0 +1,45 @@
+Angular -- frontend web application framework
+requirement : HTML,CSS,JS
+what is Angular?
+   Angular is a frontend web framework which is used to build scalable single page applications.
+
+library vs frameworks:
+   Library is a prewritten code of some functions used for a specific purpose
+  Framework is a prewritten code which gives structure to the developement
+
+React vs Angular:
+React is a JS library . Angular is a Framework
+React uses other libraries for various purposes
+Angular have all functions by default
+React uses one way data binding. Angular uses two way data binding
+React is developed and maintained by meta. Angular is developed and maintained by Google
+
+Angular uses typescript and Angular JS uses Javascript.
+course structure:
+  1. introduction to JS Essentials
+  2. Typescript - 3 days
+   3. Angular - 35 days
+        -- components
+        -- data binding
+        -- directives
+        -- httpClients
+        -- services
+        -- forms
+        -- RxJS
+    Main Project : ecommerce/OTT
+git & github, netlify, firebase, vscode
+course duration: 40 sessions
+timings: 11.05-11.10  to 12.40-12.45
+
+
+
+
+
+
+
+
+
+
+
+
+

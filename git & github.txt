@@ -1,0 +1,4 @@
+git is a distrubuted version control system
+download & install git
+check "git -v" in cmd
+terminal --> new terminal 
