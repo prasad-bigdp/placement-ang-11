@@ -1,0 +1,15 @@
+.students,.movies
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 20px;
+    gap: 20px;
+    box-shadow: 2px 3px 10px green;
+}
+.student,.movie{
+    padding: 10px;
+    box-shadow: 3px 4px 10px red;
+}
+.movie img{
+    height: 200px;
+}

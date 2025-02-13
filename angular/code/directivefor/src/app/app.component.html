@@ -1,0 +1,11 @@
+<div class="students">
+  <div *ngFor="let i of arr" class="student">
+  <h1>Hi {{i}}</h1>
+  <button>click me</button>
+</div>
+</div>
+<div class="movies">
+  <div class="movie" *ngFor="let i of movies">
+    <app-movie-card movieTitle="{{i.title}}" imageUrl="{{i.posterURL}}"></app-movie-card>
+  </div>
+</div>
