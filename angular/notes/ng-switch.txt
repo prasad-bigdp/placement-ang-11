@@ -1,0 +1,4 @@
+Ng-Switch: ng switch is used as a alternative to ngIf  when multiple else conditions were needed
+it is a structural directive  which is used to manipulate DOM with multiple conditions.
+ngswitch accepts an expression or value which is then
+checked with *ngSwitchCase, whenever match happened, switchCase element will be rendered

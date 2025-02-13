@@ -1,0 +1,1 @@
+ngFor: ngFor is a structural directive which is used to manipulate the DOM repeatedly. using ngFor,  we can print the view multiple times. Usually it is used to iterate elements of the array

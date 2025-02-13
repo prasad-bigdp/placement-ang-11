@@ -1,0 +1,12 @@
+<h1>Switch Case</h1>
+<select [(ngModel)]="role">
+   <option value="student">student</option>
+   <option value="teacher">teacher</option>
+   <option value="parent">parent</option>
+</select>
+<div [ngSwitch]="role">
+  <p *ngSwitchCase="student'">Welcome to student</p>
+  <p *ngSwitchCase="'teacher'">Welcome to teacher</p>
+  <p *ngSwitchCase="'parent'">Welcome to parent</p>
+  <p *ngSwitchDefault>Please select proper role</p>
+</div>
