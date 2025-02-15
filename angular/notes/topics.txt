@@ -1,0 +1,13 @@
+---  > Introduction of typescript
+---- > Angular - Introduction
+      one way databinding
+           string interpolation
+           property binding
+           event binding
+      two way data binding
+      components
+      parent - child components
+      structural directives
+        ngIf
+        ngSwitch
+        ngFor

@@ -1,0 +1,37 @@
+Pipes:
+    pipes are used to transform the data. they are represented by  |
+There are two kinds of pipes available in angular
+i. built in pipes
+ii. custom pipes
+i. built in pipes:
+    These pipes are given by angular to convert the data.
+  a. upperCase: it is used to convert given text into uppercase
+<h1>My name is {{name|uppercase}}</h1>
+ b. lowercase : it is used to convert given text into lowercase
+<h1>My name is {{name|lowercase}}</h1>
+c. currency : it is used to convert given value into any currency. default is dollars.
+<h1>My name is {{40|currency}}</h1> ==> $40
+we can pass arguments to change currency.
+<h1>My name is {{40|currency:"INR"}}</h1>==>₹40
+d. date: date is used to format the given date
+<h1>My name is {{some date|date}}</h1>
+e. number: number is used to transform data as decimal values
+<h1>My name is {{ 25.4123 |number:2:0-2}}</h1>==>25.41
+f.json: json is used to transform data as json object
+<h1>{{obj | json }}</h1>
+
+To generate our own pipe,  ng generate pipe pipe-name
+
+
+
+
+
+
+
+
+
+
+
+
+
+

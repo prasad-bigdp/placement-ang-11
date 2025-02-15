@@ -1,0 +1,9 @@
+<div>
+    <img [src]="imageUrl" [alt]="title" height="200">
+    <h2>{{title}}</h2>
+    <p><strong>Price: ₹</strong>{{price}}</p>
+    <button (click)="fun()">More Details</button>
+</div>
+<div class="details" *ngIf="showDetail">
+    <p>{{desc}}</p>
+</div>

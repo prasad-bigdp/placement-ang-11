@@ -1,0 +1,10 @@
+<header>
+  <div class="logo">
+    MY <span>CART</span>
+  </div>
+</header>
+<div class="products">
+   <div class="product" *ngFor="let i of products">
+        <app-product title="{{i.title}}" imageUrl="{{i.image}}" desc="{{i.description}}" price="{{i.price}}"></app-product>
+   </div>
+</div>

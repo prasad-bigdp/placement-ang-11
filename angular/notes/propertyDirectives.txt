@@ -1,0 +1,14 @@
+Property Directives are used to manipulate the DOM using poperties such as
+ngClass
+ngStyle
+
+ngClass: ngClass is used to assign a class value to an element dynamically such that styles can be altered
+   <some-element [ngClass]="isLight ? 'light' : 'dark' ">
+  
+    </some-element>
+
+ngStyle: ngStyle is used to assign style properties directly to an element dynamically such that styles can be altered
+     <some-element [ngStyle]="{display:isLight ? 'light' : 'dark' "}>
+  
+    </some-element>
+

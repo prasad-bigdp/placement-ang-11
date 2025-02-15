@@ -1,0 +1,19 @@
+header{
+    background-color: black;
+}
+.logo{
+    text-align: center;
+    color: white;
+    font-size: 48px;
+}
+.logo span{
+    color: red;
+}
+.products{
+    display: grid;grid-template-columns: repeat(4,1fr);padding: 20px; 
+    gap: 20px;
+}
+.product{
+    display: flex;flex-direction: column;justify-content: center;padding: 20px;
+    align-items: center;border-radius: 20px;box-shadow: 2px 3px 10px red;
+}
