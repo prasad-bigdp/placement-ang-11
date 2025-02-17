@@ -1,0 +1,16 @@
+Angular routing is a powerful feature that enables client side routing. it allows users to navigate from one page to another page or one component to another component.
+All routes should be mentioned within an array and these array should be rendered within routing module
+
+ step 1: goto routing.module.ts and update routes array like below:
+ const routes: Routes = [
+  { path:'',component:HomeComponent},
+  { path: 'home', component: HomeComponent },
+  { path: 'about', component: AboutComponent },
+  { path:'contact', component:ContactComponent}
+];
+
+step 2: goto app.componenet.html and mention
+<router-outlet></router-outlet>
+
+step 3: goto header and change links as routerLink istead of href like
+<a routerLink="/home">home</a>

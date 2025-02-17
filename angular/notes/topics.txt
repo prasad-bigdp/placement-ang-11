@@ -11,3 +11,12 @@
         ngIf
         ngSwitch
         ngFor
+      property directives
+        ngClass
+        ngStyle
+      pipes
+      Routing
+      Services
+      life cycle methods
+      forms
+      Rxjs

@@ -1,0 +1,30 @@
+.banner{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    font-size: 24px;
+    padding: 100px 0px;
+}
+h2{
+    color: rgb(0, 0, 0);
+    font-size: 48px;
+}
+h2 span{
+    color: rgb(46, 108, 7);
+}
+p{
+    color: rgb(0, 0, 0);
+     margin: auto;
+    max-width: 1280px;
+}
+.banner button{
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+}

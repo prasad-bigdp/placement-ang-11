@@ -1,0 +1,31 @@
+header{
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.logo{
+    color: white;
+    font-size: 48px;
+}
+.menu a{
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+h1{
+    text-align: center;
+    text-decoration:2px wavy rebeccapurple underline;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+}
