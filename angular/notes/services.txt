@@ -1,0 +1,10 @@
+Services: Service  is used to share , store common data or common functionalities. it is a class that encapsulates specific or group of common functionalities. it is used to share data between components and remove concerns from components
+
+services are injected into component using constructor injection
+
+to create a new service, we can use command 
+ng generate service service-name
+
+Dependency injection: it is a technique where one component receives another component(dependent receives dependency ) rather than creating the dependency itself
+
+services need to be mentioned inside module
