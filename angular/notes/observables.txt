@@ -1,0 +1,37 @@
+In Javascript, http requests are done by fetch method. it is default browser method used for different API requests such GET,POST,PUT,DELETE etc..,
+
+fetch or any asynchronous function returns promises. A promise is a object which describes eventual completion of asynchronous operation. it brings three states such as pending, fulfilled, rejected
+
+we can resolve promises using then and catch . if promise is fulfilled it will run then case else catch case
+
+for eg: fetch(url)
+           .then((res)=>res.json())
+           .then((data)=>console.log(data))
+           .catch((err)=>console.log(err))
+
+In Angular, httpRequests are done by HttpClient
+   i. import HttpClient and Inject into service(mention object of HttpClient in constructor parameter)
+   ii. import and mention HttpClientModule in app.module.ts
+
+HttpClient can perform GET,POST,PUT,DELETE operations
+It returns an observable. A observable is a stream of asynchronous data that ccan be subscribed to.
+It is like a stream of videos comes once you subscribed to the channel.
+   i. observables emit only asynchronous data means you don't know when the data comes
+   ii. observables are lazy means they load/emit only if someone is listening
+   iii.observable can emit multiple values 
+   iv. complete: observable can complete means they can stop whenever its needed
+   v. error handling: observables can even handle errors
+
+
+
+
+
+
+
+
+
+
+
+
+
+

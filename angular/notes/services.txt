@@ -8,3 +8,11 @@ ng generate service service-name
 Dependency injection: it is a technique where one component receives another component(dependent receives dependency ) rather than creating the dependency itself
 
 services need to be mentioned inside module
+
+services can be used for API logics so that it can get data and share it with any component. it uses a method called httpClient.
+
+httpClient is used to get the data from an endpoint or post the data to end point or update the data at an endpoint or delete the data in endpoint
+
+To make it work, 
+ i. first inject httpClient into service file.
+ ii. mention httpClientModule in main module 

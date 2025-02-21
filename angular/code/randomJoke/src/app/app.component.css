@@ -1,0 +1,18 @@
+button{
+    background-color: black;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 20px;
+    font-size: 24px;
+}
+#joke{
+    height: 40vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    font-size: 24px;
+}

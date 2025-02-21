@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background:url('https://thumbs.dreamstime.com/b/smiley-background-vector-template-yellow-funny-smileys-emoticons-smiley-background-vector-template-yellow-funny-119605329.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

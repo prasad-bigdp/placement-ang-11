@@ -1,0 +1,18 @@
+<h1>Fake Store</h1>
+<div class="buttons">
+   <button>All</button>
+   <button (click)="filterProducts($event)">men's clothing</button>
+   <button (click)="filterProducts($event)">women's clothing</button>
+   <button (click)="filterProducts($event)">electronics</button>
+   <button (click)="filterProducts($event)">jewelery</button>
+</div>
+<div class="products">
+  <div class="product" *ngFor="let i of filteredProducts">
+    <img src="{{i.image}}" alt="{{i.title}}">
+    <h2>{{i.title}}</h2>
+    <p>{{i.description}}</p>
+    <p>category: {{i.category}}</p>
+    <p>Price:₹{{i.price}}</p>
+    <button>Add to cart</button>
+  </div>
+</div>
