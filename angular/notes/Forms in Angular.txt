@@ -1,0 +1,22 @@
+Forms in Angular:
+    Angular provides two types of forms
+  i. Template Driven Forms: These forms are created using HTML templates and are useful for simple forms
+ ii. Reactive Forms: These forms are created using typescript programming. Theses are used for complex forms
+  
+Template Driven Forms: 
+   i. we use 'ngModel' directive to bind the controls /properties to the component
+   ii. we use 'ngForm' directive to create binding of form and its elements
+   iii. we use 'name' attribute to find the controls
+   
+ <input type="text" name="na" ngModel>
+ now ngModel will create a class object for FormControl which contains lot of default values for form validation such as
+  a. touched: will be true if user just touches the input. untouched is the opposite
+  b. dirty: will be true if user changes the previous value and pristine is the opposite
+  c. valid : valid will be true if user entered value passes validation and invalid is the opposite
+  d. errors: it is an array contains list of errors
+
+ we can do validations using these variables like 
+   <input type="text" name="na" ngModel>
+   <p *ngIf="na.touched && na?.errors?.['required']>please enter a value</p>
+
+

@@ -1,0 +1,13 @@
+<div id="form">
+  <h1>Registration Form</h1>
+<form #fr="ngForm" (submit)="formLogic($event,na)">
+  <div>
+    <input type="text" placeholder="Enter name" name="na" #na="ngModel" ngModel required minlength="6">
+        <p *ngIf="na.touched && na?.errors?.['required']" class="error">name is required</p>
+        <p *ngIf="na.touched && na?.errors?.['minlength']" class="error">enter minimum 6 characters</p>
+  </div><br>
+    <input type="email" placeholder="Enter email" name="em" #em="ngModel" ngModel><br>
+    <input type="password" placeholder="Enter Password" name="pwd" #pwd="ngModel" ngModel><br>
+    <button>submit</button>
+</form>
+</div>
