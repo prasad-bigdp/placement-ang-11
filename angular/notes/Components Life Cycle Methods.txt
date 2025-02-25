@@ -1,0 +1,32 @@
+Components Life Cycle Methods:
+Every component undergoes different stages of its 
+life cycle. these methods are default methods which will be called at different stages of its life cycle
+  1. initial stage: constructor is the default method which gets triggered first when the component started to render
+ 2. mounting: In this stage the components will start to render for view
+    i. ngOnChanges: this method will be triggered everytime a value changes within a component
+   ii. ngOnInit : this method will be used only when the component rendered first time/
+   iii. ngDoCheck: this method will be called right after ngOnInit and will check whether component is ready or not. it will be called every checking time
+3. update stage:
+   when ever a component got updated
+   ngOnChanges and ngDoCheck will get triggered for every change
+   iv. ngAfterContentInit: called after the components content got initialised
+   v. ngAfterContentChecked: called after the components contents got checked.
+  vi.ngAfterviewInit : called after the components view got initialised
+  vii.ngAfterViewChecked: called after the components view got checked
+ for every change ngAfterviewChecked and ngAfterContentChecked will trigger again
+
+4. unmounting stage: In this stage, component will be destroyed
+  viii. ngDestroy : will be triggered after the component got destroyed
+
+
+
+
+
+
+
+
+
+
+
+
+

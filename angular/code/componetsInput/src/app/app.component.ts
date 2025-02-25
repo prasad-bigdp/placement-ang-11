@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'componetsInput';
+  count = 0;
+  incr() {
+    this.count++;
+  }
 }

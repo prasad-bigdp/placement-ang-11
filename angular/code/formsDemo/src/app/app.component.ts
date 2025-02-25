@@ -8,8 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'formsDemo';
-  formLogic(e: any,a:any) {
-    e.preventDefault()
-    console.log(a, a.errors['required']);
-  }
+  
 }

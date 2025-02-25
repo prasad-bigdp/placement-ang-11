@@ -1,0 +1,25 @@
+#form{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 5px 10px gray;
+    padding: 20px;
+}
+.error{
+    color: red;
+}
+form{
+    display: flex;
+    flex-direction: column;
+   gap: 20px;
+}
+input{
+    height: 50px;
+    width: 40vw;
+    border-radius: 20px;
+}
+button{
+    background-color: black;
+    height: 50px;
+    color: white;
+    border-radius: 20px;
+}

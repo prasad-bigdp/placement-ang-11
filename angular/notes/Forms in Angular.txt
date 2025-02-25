@@ -19,4 +19,19 @@ Template Driven Forms:
    <input type="text" name="na" ngModel>
    <p *ngIf="na.touched && na?.errors?.['required']>please enter a value</p>
 
+2. Reactive Forms: These forms are created using typescript. Input elements are created using class 'FormControl' and whole form is combined using 'formGroup'
+<form (submit)="submitLogic()" id="form">
+    <input type="text" name="na" [formControl]="nameControl" required>
+    <p *ngIf="nameControl?.touched&&nameControl?.errors?.['required']"> name is required</p>
+    <input type="email" name="em" [formControl]="emailControl">
+    <input type="password" name="pwd" [formControl]="pwdControl">
+    <button>submit</button>
+</form>
 
+
+nameControl = new FormControl();
+  emailControl = new FormControl();
+  pwdControl = new FormControl();
+  submitLogic() {
+    console.log(this.nameControl)
+  }

@@ -1,8 +1,10 @@
 <div class="parent">
   <h1>I'm parent</h1>
+  <p>{{count}}</p>
+  <button (click)="incr()">+</button>
   <div class="books">
-     <app-book title="Wings of fire" author="Arjun Tiwari" imageUrl="https://rukminim2.flixcart.com/image/850/1000/xif0q/book/3/j/b/wings-of-fire-original-imah4ssxb4y9zmvg.jpeg?q=20&crop=false"></app-book>
-     <app-book title=" the secret" author=" Rhonde byrne " imageUrl="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781847370297/the-secret-9781847370297_lg.jpg"></app-book>
-      <app-book title=" Rich dad poor dad " author="Robert T. Kiyosaki" imageUrl="https://bookwormsdenn.com/cdn/shop/products/rich_dad_poor_dad_by_robert_t__1607410877_44fb96ac-768x1024.jpg?v=1708140442"></app-book>
+     <app-book title="Wings of fire" author="Arjun Tiwari" imageUrl="https://rukminim2.flixcart.com/image/850/1000/xif0q/book/3/j/b/wings-of-fire-original-imah4ssxb4y9zmvg.jpeg?q=20&crop=false" [c]="count"></app-book>
+     <app-book title=" the secret" author=" Rhonde byrne " imageUrl="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781847370297/the-secret-9781847370297_lg.jpg" [c]="count"></app-book>
+      <app-book title=" Rich dad poor dad " author="Robert T. Kiyosaki" imageUrl="https://bookwormsdenn.com/cdn/shop/products/rich_dad_poor_dad_by_robert_t__1607410877_44fb96ac-768x1024.jpg?v=1708140442" [c]="count"></app-book>
   </div>
 </div>
