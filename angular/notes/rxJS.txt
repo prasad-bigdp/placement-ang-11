@@ -1,0 +1,63 @@
+RxJS(Reactive Extensions for Javascript) is javascript library for reactive programming using observables.it will make it easier to comprise asynchronous or callback function
+ RxJS contains 3 topics to learn:
+   i. observables
+   ii. subjects
+   iii. operators
+
+i. observables: observable is a series of asynchronous functions/Promises. it represent a stream of data to the subscribed component
+
+eg:  x:any=''
+  constructor() {
+    this.x = of(1, 2, 3, 4, 5);
+    this.x.subscribe((data:any)=>console.log(data))
+  }
+
+'of' operator creates an observable which receives 1 ,2,3,4,5 one by one instead of at a time. we can access that value by 'subscribing' the observable.
+same subscribe can also be written asynchronous
+
+  this.x = of(1, 2, 3, 4, 5);
+    this.x.subscribe({
+      next: (data: any) => console.log(data),
+      error: (err: any) => console.log(err),
+      complete:(msg:any) =>console.log("completed")
+    })
+
+ii. subjects:  subjects are type of observables that can be used to multicase value to multiple subscribes
+
+  we have different types of subjects such as
+    i. default subjects
+    ii. Behaviour subjects
+    iii. replay subjects
+    iv. async subjects
+
+    i. default subjects:
+    you can create a subject using ' new Subject() '
+    this.y= new Subject()
+this.y.next(1);
+    this.y.next(2);
+    this.y.next(3);
+    this.y.next(4);
+    this.y.next(5);
+    this.y.subscribe((data:any)=>console.log("hi"+data))
+   2. BehaviourSubject: similar to default subject but with a default value
+   y= new BehaviourSubject(0);
+   3. ReplaySubject: used for notifications of recurring events
+   y= new replaySubject();
+   4. AsyncSubject: used for asynchronous events like scheduling certain actions
+   y= new AsyncSubject();
+
+   iii. operators: These are default methods provided by RxJS like
+     subscribe, of, forEach, map etc..,
+     
+
+
+
+
+
+
+
+
+
+
+
+
