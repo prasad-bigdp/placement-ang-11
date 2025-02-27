@@ -1,0 +1,22 @@
+<carousel>
+  <slide>
+    <img src="https://assets.tatacliq.com/medias/sys_master/images/63923663110174.jpg" alt="first slide" style="display: block; width: 100%;">
+  </slide>
+  <slide>
+    <img src="https://assets.tatacliq.com/medias/sys_master/images/63923663175710.jpg" alt="second slide" style="display: block; width: 100%;">
+  </slide>
+  <slide>
+    <img src="https://assets.tatacliq.com/medias/sys_master/images/63923663437854.jpg" alt="third slide" style="display: block; width: 100%;">
+  </slide>
+</carousel>
+<h1 class="fs-1 text-center">Products</h1>
+<div class="products container">
+    <div class="product card p-5" *ngFor="let p of pro">
+        <img src="{{p.thumbnail}}" alt="{{p.title}}" class=" card-img-top ">
+        <h2 class="card-title">{{p.title}}</h2>
+        <p class="card-text">{{p.description}}</p>
+        <p class="card-text">Price: {{p.price | currency:"INR"}}</p>
+        <rating [max]="max" [(ngModel)]="rate" [readonly]="isReadonly">{{p.rating}}</rating>
+        <button class=" btn btn-primary">Add to cart</button>
+    </div>
+</div>
