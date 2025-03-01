@@ -1,1 +1,9 @@
-<p>products works!</p>
+<div class="products container">
+    <div class="product card p-5" *ngFor="let p of pro">
+        <img src="{{p.thumbnail}}" alt="{{p.title}}" class=" card-img-top ">
+        <h2 class="card-title">{{p.title}}</h2>
+        <p class="card-text">{{p.description}}</p>
+        <p class="card-text">Price: {{p.price | currency:"INR"}}</p>
+        <button class=" btn btn-primary" (click)="addCart(p)">Add to cart</button>
+    </div>
+</div>

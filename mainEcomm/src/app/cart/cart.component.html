@@ -1,1 +1,15 @@
-<p>cart works!</p>
+<h1 class=" text-center">My cart</h1>
+<div class="container p-5">
+    <div class="items d-flex flex-column gap-3">
+        <div class="item d-flex justify-content-around" *ngFor="let i of cartItems">
+            <img src="{{i.thumbnail}}" alt="{{i.title}}" height="50" width="50">
+            <p>{{i.title}}</p>
+            <p>{{i.price |currency:"INR"}}</p>
+            <button>❎</button>
+        </div>
+    </div>
+    <div class="check d-flex justify-content-between">
+        <p>Total:{{total | currency:"INR"}}</p>
+        <button class=" btn btn-outline-success">checkout</button>
+    </div>
+</div>

@@ -13,7 +13,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { RatingModule } from 'ngx-bootstrap/rating';
 import { FormsModule } from '@angular/forms';
-
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
+import { getFirestore, provideFirestore } from '@angular/fire/firestore';
+import { firebaseConfig } from '../../environments';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +26,9 @@ import { FormsModule } from '@angular/forms';
     NotfoundComponent,
     HeaderComponent,
     FooterComponent,
-    CartComponent
+    CartComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +39,10 @@ import { FormsModule } from '@angular/forms';
     RatingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+      provideFirebaseApp(() => initializeApp(firebaseConfig)),
+    provideFirestore(() => getFirestore()),
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

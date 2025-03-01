@@ -16,7 +16,6 @@
         <h2 class="card-title">{{p.title}}</h2>
         <p class="card-text">{{p.description}}</p>
         <p class="card-text">Price: {{p.price | currency:"INR"}}</p>
-        <rating [max]="max" [(ngModel)]="rate" [readonly]="isReadonly">{{p.rating}}</rating>
-        <button class=" btn btn-primary">Add to cart</button>
+        <button class=" btn btn-primary" (click)="addCart(p)">Add to cart</button>
     </div>
 </div>

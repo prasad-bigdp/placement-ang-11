@@ -19,6 +19,9 @@ export class HomeComponent implements OnInit{
       this.pro = d.products;
     })
   }
+  addCart(item: any) {
+    this.ds.add(item)
+  }
   
   
 }

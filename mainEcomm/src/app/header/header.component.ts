@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-header',
@@ -7,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-
+  count = 0
+  constructor(private ds: DataService) {
+   this.ds.cartCountSub.subscribe((d)=>this.count=d)
+  }
 }
